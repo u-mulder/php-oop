@@ -2,19 +2,22 @@
 
 class ClassName
 {
-  // set/declare property
+    // declare property
     public $classname;
+    
+    // declare property and init with a value
     public $number = 1;
-  // define a method
+
+    // define a method
     public function setClassName($name)
     {
         $this->classname = $name;
     }
 }
 
-// Initiate new class Instance:
+// Create new class Instance:
 $classInstance = new ClassName();
-// Use Class function:
+// Call class method:
 $classInstance->setClassName('User');
-// Get Class variable value:
+// Get class property value:
 echo $classInstance->classname;
